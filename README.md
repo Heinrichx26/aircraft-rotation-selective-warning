@@ -48,6 +48,16 @@ python src/expert_example.py --output results/expert_example.json
 
 Compare each output with its corresponding `results/expected_*.json` file. The expert example generates six independent samples of constructed flight connections, builds historical summaries, trains a neural retrieval model and a gradient-boosted tree, fits the routing gate, selects and screens policies, then evaluates all 21 alert budgets. These synthetic outputs illustrate the calculation.
 
+## Paired workload comparison
+
+`src/paired_comparison.py` calculates the difference in qualifying delay minutes and delay capture in percentage points for two alert policies on the same connections. It reports paired 95% percentile intervals for operating-day, circular three-day-block, and aircraft-cluster resampling, with seed 42 and 1,000 replicates. All resampling units are sampled with replacement, and each replicate sums minutes before calculating its share. The supplied six-day constructed input exercises the calculation:
+
+```bash
+python src/paired_comparison.py data/constructed_pairs.csv --days 6 --output results/paired_example.json
+```
+
+Compare the result with `results/expected_pairs.json`. The example contains fictional aircraft identifiers and does not summarize airline operations. For another study, provide one row per connection with integer calendar day, a consistently coded aircraft group, qualifying delay minutes, and binary routed and comparison alerts. The calculation then uses that study's inputs.
+
 ## License
 
 The code in this repository is released under the MIT License. The Harvard Dataverse input archive is distributed separately under CC0 1.0. No flight-level source records are redistributed here.

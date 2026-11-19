@@ -1,0 +1,13 @@
+day,aircraft,delay_minutes,routed_alert,tree_alert
+1,ExampleA,30,1,0
+1,ExampleB,20,0,1
+2,ExampleA,0,1,1
+2,ExampleC,45,1,1
+3,ExampleB,60,0,1
+3,ExampleC,15,1,0
+4,ExampleA,40,1,0
+4,ExampleB,0,0,1
+5,ExampleC,25,0,0
+5,ExampleA,35,0,1
+6,ExampleB,90,1,0
+6,ExampleC,40,1,1
