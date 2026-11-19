@@ -1,0 +1,405 @@
+{
+  "rows_per_period": 2400,
+  "hybrid_candidates": 1260,
+  "budgets": [
+    {
+      "budget_percent": 4,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.9787876127523075,
+        "retrieval_threshold": 0.868679660287426,
+        "gate": 0.5117268018771335,
+        "weight": 0.0
+      },
+      "screening_alerts": 338,
+      "screening_false": 10,
+      "screening_upper": 0.04966729473696028,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 5,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.9369954736828284,
+        "retrieval_threshold": 0.7463580119319506,
+        "gate": 0.5117268018771335,
+        "weight": 0.0
+      },
+      "screening_alerts": 530,
+      "screening_false": 24,
+      "screening_upper": 0.06309519305894801,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 6,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.896498658077397,
+        "retrieval_threshold": 0.6246824833469872,
+        "gate": 0.901057019629193,
+        "weight": 0.1
+      },
+      "screening_alerts": 620,
+      "screening_false": 32,
+      "screening_upper": 0.06870858217757356,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 7,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.896498658077397,
+        "retrieval_threshold": 0.64209827659659,
+        "gate": 0.5117268018771335,
+        "weight": 0.0
+      },
+      "screening_alerts": 716,
+      "screening_false": 45,
+      "screening_upper": 0.07985846001844106,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 8,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.7713319476565434,
+        "retrieval_threshold": 0.6246824833469872,
+        "gate": 0.9524330119210219,
+        "weight": 0.1
+      },
+      "screening_alerts": 840,
+      "screening_false": 53,
+      "screening_upper": 0.07866970814440831,
+      "passed": true,
+      "test_model_alerts": 804,
+      "test_false": 50,
+      "test_captured_minutes": 55636,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 354.1666666666667
+    },
+    {
+      "budget_percent": 9,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.7713319476565434,
+        "retrieval_threshold": 0.6246824833469872,
+        "gate": 0.7606469159246385,
+        "weight": 0.1
+      },
+      "screening_alerts": 836,
+      "screening_false": 54,
+      "screening_upper": 0.08035611015163718,
+      "passed": true,
+      "test_model_alerts": 804,
+      "test_false": 53,
+      "test_captured_minutes": 55508,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 354.1666666666667
+    },
+    {
+      "budget_percent": 10,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.7713319476565434,
+        "retrieval_threshold": 0.46732995906719643,
+        "gate": 0.901057019629193,
+        "weight": 0.05
+      },
+      "screening_alerts": 886,
+      "screening_false": 71,
+      "screening_upper": 0.09676605890282997,
+      "passed": true,
+      "test_model_alerts": 842,
+      "test_false": 62,
+      "test_captured_minutes": 57234,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 370.0
+    },
+    {
+      "budget_percent": 11,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.7713319476565434,
+        "retrieval_threshold": 0.46732995906719643,
+        "gate": 0.7606469159246385,
+        "weight": 0.05
+      },
+      "screening_alerts": 945,
+      "screening_false": 95,
+      "screening_upper": 0.1180861690831179,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 12,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.7713319476565434,
+        "retrieval_threshold": 0.46732995906719643,
+        "gate": 0.7606469159246385,
+        "weight": 0.05
+      },
+      "screening_alerts": 945,
+      "screening_false": 95,
+      "screening_upper": 0.1180861690831179,
+      "passed": true,
+      "test_model_alerts": 894,
+      "test_false": 85,
+      "test_captured_minutes": 59272,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 391.6666666666667
+    },
+    {
+      "budget_percent": 13,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.64209827659659,
+        "gate": 0.5117268018771335,
+        "weight": 0.0
+      },
+      "screening_alerts": 1029,
+      "screening_false": 128,
+      "screening_upper": 0.1426034495350594,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 14,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.632805652735011,
+        "gate": 0.5117268018771335,
+        "weight": 0.05
+      },
+      "screening_alerts": 1027,
+      "screening_false": 129,
+      "screening_upper": 0.14390625277474428,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 15,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.6246824833469872,
+        "gate": 0.7606469159246385,
+        "weight": 0.1
+      },
+      "screening_alerts": 1119,
+      "screening_false": 163,
+      "screening_upper": 0.16414965868662879,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 16,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.6246824833469872,
+        "gate": 0.9524330119210219,
+        "weight": 0.1
+      },
+      "screening_alerts": 1197,
+      "screening_false": 190,
+      "screening_upper": 0.17714049453746405,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 17,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 18,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": false,
+      "test_model_alerts": 0,
+      "test_false": 0,
+      "test_captured_minutes": 3218,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 19.166666666666668
+    },
+    {
+      "budget_percent": 19,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": true,
+      "test_model_alerts": 1185,
+      "test_false": 187,
+      "test_captured_minutes": 72859,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 512.9166666666666
+    },
+    {
+      "budget_percent": 20,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": true,
+      "test_model_alerts": 1185,
+      "test_false": 187,
+      "test_captured_minutes": 72859,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 512.9166666666666
+    },
+    {
+      "budget_percent": 21,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": true,
+      "test_model_alerts": 1185,
+      "test_false": 187,
+      "test_captured_minutes": 72859,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 512.9166666666666
+    },
+    {
+      "budget_percent": 22,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": true,
+      "test_model_alerts": 1185,
+      "test_false": 187,
+      "test_captured_minutes": 72859,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 512.9166666666666
+    },
+    {
+      "budget_percent": 23,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": true,
+      "test_model_alerts": 1185,
+      "test_false": 187,
+      "test_captured_minutes": 72859,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 512.9166666666666
+    },
+    {
+      "budget_percent": 24,
+      "selection_feasible": true,
+      "selected_thresholds": {
+        "threshold": 0.40233955212471706,
+        "retrieval_threshold": 0.4809950974782292,
+        "gate": 0.9524330119210219,
+        "weight": 0.0
+      },
+      "screening_alerts": 1218,
+      "screening_false": 200,
+      "screening_upper": 0.1826723304591109,
+      "passed": true,
+      "test_model_alerts": 1185,
+      "test_false": 187,
+      "test_captured_minutes": 72859,
+      "test_delay_minutes": 79956,
+      "test_alerts_per_thousand": 512.9166666666666
+    }
+  ]
+}

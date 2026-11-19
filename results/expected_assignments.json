@@ -1,0 +1,11 @@
+{
+  "confirmed": 5,
+  "departed": 2,
+  "unchanged": 1,
+  "reassigned": 1,
+  "cancelled": 1,
+  "diverted": 1,
+  "pending": 1,
+  "awaiting_confirmation": 1,
+  "retention_among_departures": 0.5
+}

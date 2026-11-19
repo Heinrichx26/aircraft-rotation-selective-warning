@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+data/2008.csv.bz2
+data/2008.csv.bz2.*
+results/public_02.json
+results/public_14.json
+results/public_31.json
+results/expert_smoke.json
+results/policy_example.json
+results/assignment_example.json
+results/gate_example.json
+results/expert_example.json

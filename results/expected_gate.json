@@ -1,0 +1,153 @@
+{
+  "rows_per_period": 2400,
+  "gate_fit_rows": 2364,
+  "budgets": [
+    {
+      "budget": 4,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 3453
+    },
+    {
+      "budget": 5,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 3453
+    },
+    {
+      "budget": 6,
+      "passed": true,
+      "issued": 672,
+      "false": 27,
+      "captured_minutes": 49051
+    },
+    {
+      "budget": 7,
+      "passed": true,
+      "issued": 728,
+      "false": 32,
+      "captured_minutes": 52708
+    },
+    {
+      "budget": 8,
+      "passed": true,
+      "issued": 728,
+      "false": 32,
+      "captured_minutes": 52708
+    },
+    {
+      "budget": 9,
+      "passed": true,
+      "issued": 785,
+      "false": 46,
+      "captured_minutes": 56128
+    },
+    {
+      "budget": 10,
+      "passed": true,
+      "issued": 841,
+      "false": 54,
+      "captured_minutes": 59014
+    },
+    {
+      "budget": 11,
+      "passed": true,
+      "issued": 855,
+      "false": 66,
+      "captured_minutes": 59595
+    },
+    {
+      "budget": 12,
+      "passed": true,
+      "issued": 974,
+      "false": 101,
+      "captured_minutes": 65155
+    },
+    {
+      "budget": 13,
+      "passed": true,
+      "issued": 999,
+      "false": 108,
+      "captured_minutes": 66387
+    },
+    {
+      "budget": 14,
+      "passed": true,
+      "issued": 1048,
+      "false": 132,
+      "captured_minutes": 68025
+    },
+    {
+      "budget": 15,
+      "passed": true,
+      "issued": 1060,
+      "false": 133,
+      "captured_minutes": 68837
+    },
+    {
+      "budget": 16,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 17,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 18,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 19,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 20,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 21,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 22,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 23,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    },
+    {
+      "budget": 24,
+      "passed": true,
+      "issued": 1097,
+      "false": 150,
+      "captured_minutes": 70378
+    }
+  ]
+}

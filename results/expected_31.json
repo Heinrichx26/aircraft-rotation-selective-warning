@@ -1,0 +1,40 @@
+{
+  "days": 31,
+  "input_with_next_day": 626099,
+  "unknown_origin_zone": 282,
+  "absent_tail": 10834,
+  "incomplete_or_clock_mismatch": 29,
+  "eligible_upstream": 586842,
+  "first_day_boundary_upstreams": 18590,
+  "coverage": {
+    "same": 535128,
+    "neither": 36637,
+    "realized_only": 9443,
+    "scheduled_only": 4315,
+    "different": 1319
+  },
+  "outcomes": {
+    "realized": {
+      "candidates": 545890,
+      "evaluable": 545890,
+      "rule": 30448,
+      "observed_rule": 30448,
+      "nonpositive_window": 0,
+      "median_window": 50.0,
+      "cancelled": 0,
+      "diverted": 0,
+      "other_unobserved": 0
+    },
+    "scheduled": {
+      "candidates": 540762,
+      "evaluable": 537010,
+      "rule": 27374,
+      "observed_rule": 26595,
+      "nonpositive_window": 40,
+      "median_window": 50.0,
+      "cancelled": 2567,
+      "diverted": 1185,
+      "other_unobserved": 0
+    }
+  }
+}

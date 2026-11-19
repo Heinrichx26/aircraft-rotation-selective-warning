@@ -1,0 +1,154 @@
+{
+  "connections_per_sample": 2400,
+  "expert_fit_rows": 2239,
+  "gate_fit_rows": 2201,
+  "budgets": [
+    {
+      "budget": 4,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 5,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 6,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 7,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 8,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 9,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 10,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 11,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 12,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 13,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 14,
+      "passed": false,
+      "issued": 0,
+      "false": 0,
+      "captured_minutes": 8346
+    },
+    {
+      "budget": 15,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 16,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 17,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 18,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 19,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 20,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 21,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 22,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 23,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    },
+    {
+      "budget": 24,
+      "passed": true,
+      "issued": 1270,
+      "false": 135,
+      "captured_minutes": 44844
+    }
+  ]
+}
