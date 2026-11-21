@@ -22,7 +22,7 @@ def timeline(rows):
 
 
 def follow(rows):
-    counts = dict(confirmed=0, departed=0, unchanged=0, reassigned=0,
+    counts = dict(confirmed=0, departed=0, unchanged=0, reassigned=0, same_at_departure=0,
                   cancelled=0, diverted=0, pending=0, awaiting_confirmation=0)
     for events in timeline(rows).values():
         assignments = sorted((stamp, craft) for stamp, kind, craft in events if kind == 'assignment')
@@ -52,8 +52,10 @@ def follow(rows):
                     raise ValueError('A completed departure needs its aircraft identifier.')
                 retained = final_aircraft == inbound and all(craft == inbound for time,craft in assignments[known:bisect_right(times,end)])
                 counts['unchanged' if retained else 'reassigned'] += 1
+                counts['same_at_departure'] += int(final_aircraft == inbound)
     assert counts['confirmed'] == sum(counts[key] for key in ['departed','cancelled','diverted','pending'])
     assert counts['departed'] == counts['unchanged'] + counts['reassigned']
+    assert counts['unchanged'] <= counts['same_at_departure'] <= counts['departed']
     counts['retention_among_departures'] = counts['unchanged']/counts['departed'] if counts['departed'] else None
     return counts
 

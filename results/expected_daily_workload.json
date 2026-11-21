@@ -1,0 +1,100 @@
+{
+  "connections": 18,
+  "days": 3,
+  "comparisons": {
+    "tree": {
+      "alerts": [
+        8,
+        8
+      ],
+      "false": [
+        2,
+        2
+      ],
+      "delay_minutes": [
+        244,
+        313
+      ],
+      "paired": {
+        "denominator_minutes": 412.0,
+        "difference_minutes": -69.0,
+        "gain_pp": -16.74757281553398,
+        "days_1": {
+          "valid": 1000,
+          "interval_pp": [
+            -43.24324324324324,
+            0.0
+          ]
+        },
+        "days_3": {
+          "valid": 1000,
+          "interval_pp": [
+            -16.74757281553398,
+            -16.74757281553398
+          ]
+        },
+        "aircraft": {
+          "valid": 1000,
+          "interval_pp": [
+            -70.23809523809524,
+            32.88590604026846
+          ]
+        },
+        "airport_pair": {
+          "valid": 1000,
+          "interval_pp": [
+            -72.39263803680981,
+            34.02777777777778
+          ]
+        }
+      }
+    },
+    "severity": {
+      "alerts": [
+        8,
+        8
+      ],
+      "false": [
+        2,
+        3
+      ],
+      "delay_minutes": [
+        244,
+        276
+      ],
+      "paired": {
+        "denominator_minutes": 412.0,
+        "difference_minutes": -32.0,
+        "gain_pp": -7.766990291262136,
+        "days_1": {
+          "valid": 1000,
+          "interval_pp": [
+            -14.864864864864865,
+            -3.7313432835820897
+          ]
+        },
+        "days_3": {
+          "valid": 1000,
+          "interval_pp": [
+            -7.766990291262136,
+            -7.766990291262136
+          ]
+        },
+        "aircraft": {
+          "valid": 1000,
+          "interval_pp": [
+            -90.09701213319794,
+            68.04733727810651
+          ]
+        },
+        "airport_pair": {
+          "valid": 1000,
+          "interval_pp": [
+            -89.09657320872275,
+            65.07177033492823
+          ]
+        }
+      }
+    }
+  }
+}

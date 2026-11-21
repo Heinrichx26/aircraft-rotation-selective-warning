@@ -1,0 +1,1034 @@
+{
+  "method": "One-sided Clopper-Pearson upper limits with Bonferroni allocation.",
+  "familywise_error_rate": 0.05,
+  "per_method_families": {
+    "hybrid": {
+      "policy_count": 21,
+      "policies": [
+        {
+          "budget": 4,
+          "screen_false": 113,
+          "screen_issued": 3930,
+          "pointwise_upper_percent": 3.35,
+          "familywise_upper_percent": 3.71,
+          "within_budget": true
+        },
+        {
+          "budget": 5,
+          "screen_false": 250,
+          "screen_issued": 5315,
+          "pointwise_upper_percent": 5.21,
+          "familywise_upper_percent": 5.58,
+          "within_budget": false
+        },
+        {
+          "budget": 6,
+          "screen_false": 304,
+          "screen_issued": 5409,
+          "pointwise_upper_percent": 6.16,
+          "familywise_upper_percent": 6.56,
+          "within_budget": false
+        },
+        {
+          "budget": 7,
+          "screen_false": 358,
+          "screen_issued": 5490,
+          "pointwise_upper_percent": 7.1,
+          "familywise_upper_percent": 7.52,
+          "within_budget": false
+        },
+        {
+          "budget": 8,
+          "screen_false": 410,
+          "screen_issued": 5582,
+          "pointwise_upper_percent": 7.95,
+          "familywise_upper_percent": 8.38,
+          "within_budget": false
+        },
+        {
+          "budget": 9,
+          "screen_false": 458,
+          "screen_issued": 5661,
+          "pointwise_upper_percent": 8.71,
+          "familywise_upper_percent": 9.16,
+          "within_budget": false
+        },
+        {
+          "budget": 10,
+          "screen_false": 605,
+          "screen_issued": 6185,
+          "pointwise_upper_percent": 10.43,
+          "familywise_upper_percent": 10.89,
+          "within_budget": false
+        },
+        {
+          "budget": 11,
+          "screen_false": 692,
+          "screen_issued": 6351,
+          "pointwise_upper_percent": 11.56,
+          "familywise_upper_percent": 12.04,
+          "within_budget": false
+        },
+        {
+          "budget": 12,
+          "screen_false": 692,
+          "screen_issued": 6351,
+          "pointwise_upper_percent": 11.56,
+          "familywise_upper_percent": 12.04,
+          "within_budget": false
+        },
+        {
+          "budget": 13,
+          "screen_false": 811,
+          "screen_issued": 6604,
+          "pointwise_upper_percent": 12.96,
+          "familywise_upper_percent": 13.46,
+          "within_budget": false
+        },
+        {
+          "budget": 14,
+          "screen_false": 811,
+          "screen_issued": 6604,
+          "pointwise_upper_percent": 12.96,
+          "familywise_upper_percent": 13.46,
+          "within_budget": true
+        },
+        {
+          "budget": 15,
+          "screen_false": 1055,
+          "screen_issued": 7329,
+          "pointwise_upper_percent": 15.09,
+          "familywise_upper_percent": 15.59,
+          "within_budget": false
+        },
+        {
+          "budget": 16,
+          "screen_false": 1195,
+          "screen_issued": 7639,
+          "pointwise_upper_percent": 16.34,
+          "familywise_upper_percent": 16.85,
+          "within_budget": false
+        },
+        {
+          "budget": 17,
+          "screen_false": 1294,
+          "screen_issued": 7798,
+          "pointwise_upper_percent": 17.3,
+          "familywise_upper_percent": 17.81,
+          "within_budget": false
+        },
+        {
+          "budget": 18,
+          "screen_false": 1394,
+          "screen_issued": 7969,
+          "pointwise_upper_percent": 18.21,
+          "familywise_upper_percent": 18.72,
+          "within_budget": false
+        },
+        {
+          "budget": 19,
+          "screen_false": 1487,
+          "screen_issued": 8110,
+          "pointwise_upper_percent": 19.06,
+          "familywise_upper_percent": 19.58,
+          "within_budget": false
+        },
+        {
+          "budget": 20,
+          "screen_false": 1610,
+          "screen_issued": 8297,
+          "pointwise_upper_percent": 20.13,
+          "familywise_upper_percent": 20.66,
+          "within_budget": false
+        },
+        {
+          "budget": 21,
+          "screen_false": 1610,
+          "screen_issued": 8297,
+          "pointwise_upper_percent": 20.13,
+          "familywise_upper_percent": 20.66,
+          "within_budget": true
+        },
+        {
+          "budget": 22,
+          "screen_false": 1758,
+          "screen_issued": 8554,
+          "pointwise_upper_percent": 21.28,
+          "familywise_upper_percent": 21.81,
+          "within_budget": true
+        },
+        {
+          "budget": 23,
+          "screen_false": 1936,
+          "screen_issued": 8822,
+          "pointwise_upper_percent": 22.68,
+          "familywise_upper_percent": 23.21,
+          "within_budget": false
+        },
+        {
+          "budget": 24,
+          "screen_false": 2101,
+          "screen_issued": 9060,
+          "pointwise_upper_percent": 23.93,
+          "familywise_upper_percent": 24.46,
+          "within_budget": false
+        }
+      ]
+    },
+    "retrieval": {
+      "policy_count": 21,
+      "policies": [
+        {
+          "budget": 4,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 5,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 6,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 7,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 8,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 9,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 10,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 11,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 12,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 13,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 14,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 15,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 16,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 17,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 18,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 19,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 20,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 21,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 22,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 23,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        },
+        {
+          "budget": 24,
+          "screen_false": 0,
+          "screen_issued": 0,
+          "pointwise_upper_percent": null,
+          "familywise_upper_percent": null,
+          "within_budget": false
+        }
+      ]
+    },
+    "tree": {
+      "policy_count": 21,
+      "policies": [
+        {
+          "budget": 4,
+          "screen_false": 29,
+          "screen_issued": 3792,
+          "pointwise_upper_percent": 1.04,
+          "familywise_upper_percent": 1.26,
+          "within_budget": true
+        },
+        {
+          "budget": 5,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": false
+        },
+        {
+          "budget": 6,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 7,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 8,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 9,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 10,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 11,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 12,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 13,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 14,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 15,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 16,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 17,
+          "screen_false": 241,
+          "screen_issued": 5326,
+          "pointwise_upper_percent": 5.02,
+          "familywise_upper_percent": 5.39,
+          "within_budget": true
+        },
+        {
+          "budget": 18,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": false
+        },
+        {
+          "budget": 19,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": true
+        },
+        {
+          "budget": 20,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": true
+        },
+        {
+          "budget": 21,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": true
+        },
+        {
+          "budget": 22,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": true
+        },
+        {
+          "budget": 23,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": true
+        },
+        {
+          "budget": 24,
+          "screen_false": 1352,
+          "screen_issued": 8047,
+          "pointwise_upper_percent": 17.5,
+          "familywise_upper_percent": 18.01,
+          "within_budget": true
+        }
+      ]
+    }
+  },
+  "all_policy_families": {
+    "policy_count": 63,
+    "policies": [
+      {
+        "policy": "hybrid",
+        "budget": 4,
+        "screen_false": 113,
+        "screen_issued": 3930,
+        "familywise_upper_percent": 3.82,
+        "within_budget": true
+      },
+      {
+        "policy": "hybrid",
+        "budget": 5,
+        "screen_false": 250,
+        "screen_issued": 5315,
+        "familywise_upper_percent": 5.69,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 6,
+        "screen_false": 304,
+        "screen_issued": 5409,
+        "familywise_upper_percent": 6.68,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 7,
+        "screen_false": 358,
+        "screen_issued": 5490,
+        "familywise_upper_percent": 7.64,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 8,
+        "screen_false": 410,
+        "screen_issued": 5582,
+        "familywise_upper_percent": 8.51,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 9,
+        "screen_false": 458,
+        "screen_issued": 5661,
+        "familywise_upper_percent": 9.3,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 10,
+        "screen_false": 605,
+        "screen_issued": 6185,
+        "familywise_upper_percent": 11.03,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 11,
+        "screen_false": 692,
+        "screen_issued": 6351,
+        "familywise_upper_percent": 12.18,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 12,
+        "screen_false": 692,
+        "screen_issued": 6351,
+        "familywise_upper_percent": 12.18,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 13,
+        "screen_false": 811,
+        "screen_issued": 6604,
+        "familywise_upper_percent": 13.6,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 14,
+        "screen_false": 811,
+        "screen_issued": 6604,
+        "familywise_upper_percent": 13.6,
+        "within_budget": true
+      },
+      {
+        "policy": "hybrid",
+        "budget": 15,
+        "screen_false": 1055,
+        "screen_issued": 7329,
+        "familywise_upper_percent": 15.73,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 16,
+        "screen_false": 1195,
+        "screen_issued": 7639,
+        "familywise_upper_percent": 16.99,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 17,
+        "screen_false": 1294,
+        "screen_issued": 7798,
+        "familywise_upper_percent": 17.96,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 18,
+        "screen_false": 1394,
+        "screen_issued": 7969,
+        "familywise_upper_percent": 18.87,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 19,
+        "screen_false": 1487,
+        "screen_issued": 8110,
+        "familywise_upper_percent": 19.73,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 20,
+        "screen_false": 1610,
+        "screen_issued": 8297,
+        "familywise_upper_percent": 20.81,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 21,
+        "screen_false": 1610,
+        "screen_issued": 8297,
+        "familywise_upper_percent": 20.81,
+        "within_budget": true
+      },
+      {
+        "policy": "hybrid",
+        "budget": 22,
+        "screen_false": 1758,
+        "screen_issued": 8554,
+        "familywise_upper_percent": 21.96,
+        "within_budget": true
+      },
+      {
+        "policy": "hybrid",
+        "budget": 23,
+        "screen_false": 1936,
+        "screen_issued": 8822,
+        "familywise_upper_percent": 23.36,
+        "within_budget": false
+      },
+      {
+        "policy": "hybrid",
+        "budget": 24,
+        "screen_false": 2101,
+        "screen_issued": 9060,
+        "familywise_upper_percent": 24.62,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 4,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 5,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 6,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 7,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 8,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 9,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 10,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 11,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 12,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 13,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 14,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 15,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 16,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 17,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 18,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 19,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 20,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 21,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 22,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 23,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "retrieval",
+        "budget": 24,
+        "screen_false": 0,
+        "screen_issued": 0,
+        "familywise_upper_percent": null,
+        "within_budget": false
+      },
+      {
+        "policy": "tree",
+        "budget": 4,
+        "screen_false": 29,
+        "screen_issued": 3792,
+        "familywise_upper_percent": 1.32,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 5,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": false
+      },
+      {
+        "policy": "tree",
+        "budget": 6,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 7,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 8,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 9,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 10,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 11,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 12,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 13,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 14,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 15,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 16,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 17,
+        "screen_false": 241,
+        "screen_issued": 5326,
+        "familywise_upper_percent": 5.49,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 18,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": false
+      },
+      {
+        "policy": "tree",
+        "budget": 19,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 20,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 21,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 22,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 23,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": true
+      },
+      {
+        "policy": "tree",
+        "budget": 24,
+        "screen_false": 1352,
+        "screen_issued": 8047,
+        "familywise_upper_percent": 18.15,
+        "within_budget": true
+      }
+    ]
+  }
+}

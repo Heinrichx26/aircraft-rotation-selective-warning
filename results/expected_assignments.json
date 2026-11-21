@@ -3,6 +3,7 @@
   "departed": 2,
   "unchanged": 1,
   "reassigned": 1,
+  "same_at_departure": 2,
   "cancelled": 1,
   "diverted": 1,
   "pending": 1,

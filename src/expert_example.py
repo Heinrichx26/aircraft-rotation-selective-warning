@@ -32,11 +32,10 @@ def connections(size, generator):
         evidence_warning=(-slack >= 15).astype(int), warning_target=(delay >= 15).astype(int), next_dep_delay_min=delay))
 
 
-def run(size):
+def fit_and_score(samples, *, threads=1):
     torch.manual_seed(42)
-    torch.set_num_threads(1)
-    generator = np.random.default_rng(42)
-    history, train, gate_fit, selection, screening, test = [connections(size, generator) for _ in range(6)]
+    torch.set_num_threads(threads)
+    history, train, gate_fit, selection, screening, test = samples
     settings = json.loads((Path(__file__).resolve().parents[1] / 'data' / 'expert_settings.json').read_text(encoding='utf-8'))
     config = SimpleNamespace(warning_delay_threshold_min=15, csrmg=SimpleNamespace(**settings['retrieval']))
     preprocessor = experts.fit_csrmg_preprocessor(history, config)
@@ -59,7 +58,7 @@ def run(size):
         columns = [key for key in experts.BASE_MODEL_FEATURES + experts.HISTORY_MODEL_FEATURES if key != 'next_distance_km']
         return enriched[columns].assign(**{key:pd.Categorical(enriched[key], categories=values) for key,values in categories.items()})
 
-    tree = XGBClassifier(**settings['tree'], random_state=42, n_jobs=1).fit(features(train), train.warning_target)
+    tree = XGBClassifier(**settings['tree'], random_state=42, n_jobs=threads).fit(features(train), train.warning_target)
 
     def predict(frame):
         utility, disagreement, support, fallback = experts.neural_scores(frame, preprocessor, network, config).T
@@ -82,9 +81,16 @@ def run(size):
         calibrated = _apply_tree_calibrator(predict(frame), scale)
         return _apply_hybrid_model(_apply_standardization(calibrated, stats, cutoff), parameters)
 
-    candidates = scan(score(selection), component_models_only=True)
-    policies, _ = calibrate(candidates, score(screening))
-    final = score(test)
+    return list(map(score, (selection, screening, test))), len(train), len(fit), score
+
+
+def run(size):
+    generator = np.random.default_rng(42)
+    samples = [connections(size, generator) for _ in range(6)]
+    (selection, screening, final), train_size, gate_size, score = fit_and_score(samples)
+    candidates = scan(selection, component_models_only=True)
+    policies, _ = calibrate(candidates, screening)
+    test = samples[-1]
     changed = score(test.assign(warning_target=1-test.warning_target, next_dep_delay_min=0))
     for column in ['gate_retrieval_bonus','aggregated_utility','disagreement','tree_probability_calibrated']:
         np.testing.assert_allclose(final[column], changed[column], atol=1e-6, rtol=1e-6)
@@ -94,7 +100,7 @@ def run(size):
         outcomes = performance(final, alerts(final, policy))
         budgets.append(dict(budget=budget, passed=policy is not None, issued=outcomes['model_alerts'],
                             false=outcomes['model_false'], captured_minutes=outcomes['model_minutes']+outcomes['rule_minutes']))
-    return dict(connections_per_sample=size, expert_fit_rows=len(train), gate_fit_rows=len(fit), budgets=budgets)
+    return dict(connections_per_sample=size, expert_fit_rows=train_size, gate_fit_rows=gate_size, budgets=budgets)
 
 
 if __name__ == '__main__':

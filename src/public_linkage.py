@@ -8,11 +8,13 @@ import numpy as np
 import pandas as pd
 
 
-def reconstruct(source, days):
+def read_archive(source, days, *, include_carrier=False):
     with source.open('rb') as handle:
         if hashlib.file_digest(handle,'md5').hexdigest()!='a73e97aa143a3e21db3bf0cdfba68775':
             raise ValueError('Archive integrity failure')
     fields='Month DayofMonth CRSDepTime CRSArrTime DepTime ArrTime DepDelay ArrDelay ActualElapsedTime CRSElapsedTime TailNum Origin Dest Cancelled Diverted'.split()
+    if include_carrier:
+        fields.append('UniqueCarrier')
     parts=[]
     for chunk in pd.read_csv(source,usecols=fields,chunksize=250000,dtype={'TailNum':'string'}):
         if days < 31:
@@ -22,7 +24,6 @@ def reconstruct(source, days):
         parts.append(chunk.loc[selected])
     flights=pd.concat(parts).copy()
     flights['id']=flights.index
-    total=len(flights)
     airports=airportsdata.load('IATA')
     flights['day']=pd.to_datetime(dict(year=2008,month=flights.Month,day=flights.DayofMonth))
     if days == 31 and not flights.day.max() == pd.Timestamp('2008-02-01'):
@@ -39,6 +40,12 @@ def reconstruct(source, days):
     verified=complete&measured.eq(flights.ArrDelay)
     tail=flights.TailNum.notna()&~flights.TailNum.isin(['0','000000','UNKNOW','UNKNOWN'])
     valid=tail&flights.planned.notna()
+    return flights, valid, verified, complete, tail
+
+
+def reconstruct(source, days):
+    flights, valid, verified, complete, tail = read_archive(source, days)
+    total=len(flights)
     basis=flights.loc[valid&verified&flights.Month.eq(1)&flights.DayofMonth.le(days)].copy()
     chosen={}
     outcomes={}

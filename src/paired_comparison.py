@@ -33,13 +33,18 @@ def compare(frame, days, repeats=1000, seed=42):
         starts = rng.integers(days, size=(repeats, (days + width - 1) // width))
         draw = ((starts[:, :, None] + np.arange(width)) % days).reshape(repeats, -1)[:, :days]
         results[f'days_{width}'] = interval(daily[draw].sum(axis=1))
-    aircraft = work.groupby('aircraft', sort=True)[columns].sum().to_numpy()
-    rng = np.random.default_rng(seed)
-    batches = []
-    for start in range(0, repeats, 100):
-        draw = rng.integers(len(aircraft), size=(min(100, repeats - start), len(aircraft)))
-        batches.append(aircraft[draw].sum(axis=1))
-    results['aircraft'] = interval(np.concatenate(batches))
+    for column, cluster_seed in [('aircraft', seed), ('airport_pair', 314159)]:
+        if column not in work:
+            continue
+        if work[column].isna().any():
+            raise ValueError(f'Provide a {column} group for every connection.')
+        clusters = work.groupby(column, sort=True)[columns].sum().to_numpy()
+        rng = np.random.default_rng(cluster_seed)
+        batches = []
+        for start in range(0, repeats, 100):
+            draw = rng.integers(len(clusters), size=(min(100, repeats - start), len(clusters)))
+            batches.append(clusters[draw].sum(axis=1))
+        results[column] = interval(np.concatenate(batches))
     return results
 
 

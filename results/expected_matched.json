@@ -1,0 +1,431 @@
+{
+  "constructed_connections_per_period": 2400,
+  "budgets": [
+    {
+      "budget": 15,
+      "routed_policy_passed": true,
+      "selection_false_alert_ceiling": 100,
+      "methods": {
+        "tree": {
+          "screen": {
+            "threshold": 0.8150000000000001,
+            "selection_issued": 200,
+            "selection_false": 0,
+            "screening_issued": 200,
+            "screening_false": 0,
+            "screening_limit": 0.014867039231272056,
+            "passed": true
+          },
+          "all_connections": {
+            "connections": 2400,
+            "routed": [
+              900,
+              100,
+              74800
+            ],
+            "comparator": [
+              200,
+              0,
+              21200
+            ],
+            "paired": {
+              "denominator_minutes": 113500.0,
+              "difference_minutes": 53600.0,
+              "gain_pp": 47.22466960352423,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  43.803420581748576,
+                  51.69060526462862
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  45.70046703633088,
+                  48.77154675045712
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.52259471837502,
+                  49.81634474579832
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.24151828737731,
+                  49.92547856708012
+                ]
+              }
+            }
+          },
+          "scheduled_lead_at_least_15": {
+            "connections": 2000,
+            "routed": [
+              700,
+              100,
+              53600
+            ],
+            "comparator": [
+              0,
+              0,
+              0
+            ],
+            "paired": {
+              "denominator_minutes": 79600.0,
+              "difference_minutes": 53600.0,
+              "gain_pp": 67.33668341708542,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  64.81929243164679,
+                  71.19741032497329
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  65.86195722618277,
+                  68.83516539182412
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  64.78606526082277,
+                  69.84566789289455
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  64.2291943360566,
+                  70.39925396963133
+                ]
+              }
+            }
+          }
+        },
+        "empirical": {
+          "screen": {
+            "threshold": 62.58,
+            "selection_issued": 200,
+            "selection_false": 0,
+            "screening_issued": 200,
+            "screening_false": 0,
+            "screening_limit": 0.014867039231272056,
+            "passed": true
+          },
+          "all_connections": {
+            "connections": 2400,
+            "routed": [
+              900,
+              100,
+              74800
+            ],
+            "comparator": [
+              200,
+              0,
+              21400
+            ],
+            "paired": {
+              "denominator_minutes": 113500.0,
+              "difference_minutes": 53400.0,
+              "gain_pp": 47.048458149779734,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.83228276486368,
+                  49.65572232645403
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  46.09197094196185,
+                  48.03913655644937
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.055334073282445,
+                  49.99536267739672
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.84548369820423,
+                  49.51182421492975
+                ]
+              }
+            }
+          },
+          "scheduled_lead_at_least_15": {
+            "connections": 2000,
+            "routed": [
+              700,
+              100,
+              53600
+            ],
+            "comparator": [
+              100,
+              0,
+              10100
+            ],
+            "paired": {
+              "denominator_minutes": 79600.0,
+              "difference_minutes": 43500.0,
+              "gain_pp": 54.64824120603015,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  51.54284144435509,
+                  58.451007463401055
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  52.89420161461388,
+                  56.4282457828884
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  51.8629640314263,
+                  57.43988705032389
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  53.15771982201765,
+                  56.2695027599793
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 18,
+      "routed_policy_passed": true,
+      "selection_false_alert_ceiling": 100,
+      "methods": {
+        "tree": {
+          "screen": {
+            "threshold": 0.8150000000000001,
+            "selection_issued": 200,
+            "selection_false": 0,
+            "screening_issued": 200,
+            "screening_false": 0,
+            "screening_limit": 0.014867039231272056,
+            "passed": true
+          },
+          "all_connections": {
+            "connections": 2400,
+            "routed": [
+              900,
+              100,
+              74800
+            ],
+            "comparator": [
+              200,
+              0,
+              21200
+            ],
+            "paired": {
+              "denominator_minutes": 113500.0,
+              "difference_minutes": 53600.0,
+              "gain_pp": 47.22466960352423,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  43.803420581748576,
+                  51.69060526462862
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  45.70046703633088,
+                  48.77154675045712
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.52259471837502,
+                  49.81634474579832
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  44.24151828737731,
+                  49.92547856708012
+                ]
+              }
+            }
+          },
+          "scheduled_lead_at_least_15": {
+            "connections": 2000,
+            "routed": [
+              700,
+              100,
+              53600
+            ],
+            "comparator": [
+              0,
+              0,
+              0
+            ],
+            "paired": {
+              "denominator_minutes": 79600.0,
+              "difference_minutes": 53600.0,
+              "gain_pp": 67.33668341708542,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  64.81929243164679,
+                  71.19741032497329
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  65.86195722618277,
+                  68.83516539182412
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  64.78606526082277,
+                  69.84566789289455
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  64.2291943360566,
+                  70.39925396963133
+                ]
+              }
+            }
+          }
+        },
+        "empirical": {
+          "screen": {
+            "threshold": 41.745,
+            "selection_issued": 700,
+            "selection_false": 100,
+            "screening_issued": 700,
+            "screening_false": 100,
+            "screening_limit": 0.16644551642536418,
+            "passed": true
+          },
+          "all_connections": {
+            "connections": 2400,
+            "routed": [
+              900,
+              100,
+              74800
+            ],
+            "comparator": [
+              700,
+              100,
+              55200
+            ],
+            "paired": {
+              "denominator_minutes": 113500.0,
+              "difference_minutes": 19600.0,
+              "gain_pp": 17.26872246696035,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  15.217610723128074,
+                  20.144045558595277
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  16.298183684122055,
+                  18.24241672132891
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  14.749365727070463,
+                  19.990516352405525
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  15.005658947636952,
+                  19.48808681723527
+                ]
+              }
+            }
+          },
+          "scheduled_lead_at_least_15": {
+            "connections": 2000,
+            "routed": [
+              700,
+              100,
+              53600
+            ],
+            "comparator": [
+              500,
+              100,
+              34000
+            ],
+            "paired": {
+              "denominator_minutes": 79600.0,
+              "difference_minutes": 19600.0,
+              "gain_pp": 24.623115577889447,
+              "days_1": {
+                "valid": 1000,
+                "interval_pp": [
+                  22.25047356310149,
+                  27.831804879255415
+                ]
+              },
+              "days_3": {
+                "valid": 1000,
+                "interval_pp": [
+                  23.23347017206743,
+                  26.03185043702645
+                ]
+              },
+              "aircraft": {
+                "valid": 1000,
+                "interval_pp": [
+                  21.0852013146842,
+                  28.29520859631126
+                ]
+              },
+              "airport_pair": {
+                "valid": 1000,
+                "interval_pp": [
+                  21.620259749246944,
+                  27.50327961763948
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
