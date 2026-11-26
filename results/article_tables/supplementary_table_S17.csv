@@ -1,0 +1,11 @@
+Measure,Absent January–April 15%,Absent January–April 18%,Absent January–May 15%,Absent January–May 18%
+Connections,"1,633","1,633",763,763
+Airport pairs (with qualifying delay),163 (121),163 (121),105 (74),105 (74)
+Qualifying delay minutes,"21,960","21,960","10,645","10,645"
+Routed minus tree (min),+37,+52,+37,+52
+Routed minus tree (pp),+0.17,+0.24,+0.35,+0.49
+Pairs favouring routing/tree,2/0,1/0,2/0,1/0
+Three-day block interval,"[0.00, 0.41]","[0.00, 0.71]","[0.00, 0.83]","[0.00, 1.42]"
+Airport-pair interval,"[0.00, 0.46]","[0.00, 0.74]","[0.00, 0.99]","[0.00, 1.40]"
+Departure-airport interval,"[0.00, 0.48]","[0.00, 0.67]","[0.00, 1.09]","[0.00, 1.28]"
+Arrival-airport interval,"[0.00, 0.50]","[0.00, 0.78]","[0.00, 1.09]","[0.00, 1.38]"

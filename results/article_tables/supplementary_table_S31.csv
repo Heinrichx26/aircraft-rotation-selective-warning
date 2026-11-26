@@ -1,0 +1,13 @@
+Day,Group,15% ceiling False/alerts,15% ceiling Upper (%),18% ceiling False/alerts,18% ceiling Upper (%)
+8,All connections,"267/3,259",9.54,"454/3,959",12.86
+,At least 15 scheduled minutes,"266/2,630",11.76,"453/3,330",15.24
+,At least 25 scheduled minutes,"260/2,220",13.62,"446/2,914",17.14
+15,All connections,"696/10,174",7.53,"1,120/12,020",10.04
+,At least 15 scheduled minutes,"694/8,358",9.13,"1,118/10,204",11.80
+,At least 25 scheduled minutes,"680/7,191",10.40,"1,101/9,023",13.14
+22,All connections,"1,451/20,789",7.46,"2,300/24,362",9.95
+,At least 15 scheduled minutes,"1,449/17,024",9.09,"2,298/20,597",11.75
+,At least 25 scheduled minutes,"1,425/14,721",10.34,"2,270/18,272",13.08
+29,All connections,"2,108/29,545",7.54,"3,402/34,770",10.21
+,At least 15 scheduled minutes,"2,106/24,318",9.15,"3,400/29,543",12.01
+,At least 25 scheduled minutes,"2,071/21,137",10.35,"3,360/26,334",13.31

@@ -1,0 +1,9 @@
+Measure,15% ceiling,18% ceiling
+Selected budget point,8%,11%
+Connections with at least 25 scheduled minutes,"337,660","337,660"
+Model alerts,"23,224","28,911"
+False alerts,"2,306","3,741"
+Model error (%) [95% interval],"9.93 [8.91, 11.03]","12.94 [11.79, 14.18]"
+Delay minutes identified,"1,288,956","1,490,958"
+CDS (%),27.59,31.92
+Largest weekly upper limit (%),13.62,17.14

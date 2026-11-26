@@ -1,0 +1,164 @@
+{
+  "description": "Calendar partition, selection, screening and monitoring rules of the article pipeline.",
+  "decision_time": "actual landing of the upstream flight, local civil time",
+  "successor_order": "actual departure order of the same aircraft; scheduled order is a sensitivity analysis",
+  "label_minutes": 15,
+  "label_minutes_sensitivity": [
+    10,
+    30
+  ],
+  "periods": {
+    "history": [
+      "01-01",
+      "02-01"
+    ],
+    "experts": [
+      "02-01",
+      "04-01"
+    ],
+    "gate_and_calibration": [
+      "04-01",
+      "05-01"
+    ],
+    "selection": [
+      "05-01",
+      "05-16"
+    ],
+    "screening": [
+      "05-16",
+      "06-01"
+    ],
+    "test": [
+      "06-01",
+      "07-01"
+    ],
+    "closed_loop_replay": [
+      "06-01",
+      "12-31"
+    ]
+  },
+  "outcome_rule": "a record enters a fitting, selection or screening period only when its onward departure occurred before the period ended",
+  "samples": {
+    "experts": 131072,
+    "gate_and_calibration": 8192,
+    "seed": 42
+  },
+  "epochs": 8,
+  "epoch_rule": "keep the epoch with the highest mean April share of qualifying delay minutes among the top 10%, 15% and 20% of retrieval scores",
+  "budgets_percent": [
+    4,
+    24
+  ],
+  "primary_budgets_percent": [
+    15,
+    18
+  ],
+  "operating_ceilings_percent": [
+    15,
+    18
+  ],
+  "candidate_quantiles": [
+    0.5,
+    0.65,
+    0.75,
+    0.8,
+    0.85,
+    0.875,
+    0.9,
+    0.925,
+    0.95,
+    0.965,
+    0.975,
+    0.985,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "single_score_points": 100,
+  "gate_quantiles": [
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "disagreement_weights": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "tree_utility_offsets": [
+    0,
+    15,
+    30,
+    60,
+    120,
+    "probability"
+  ],
+  "entropy_cutoffs": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "hybrid_grid_size": 295902,
+  "selection": {
+    "criterion": "maximise qualifying delay minutes subject to the selection upper limit; ties go to fewer false alerts, then to enumeration order",
+    "selection_limit_tail": 0.05,
+    "frontier": "candidates with selection upper limit at most 24%, ordered by upper limit and kept only when delay minutes strictly increase"
+  },
+  "screening": {
+    "rule": "fixed-sequence test along the frontier: screen candidates in order and stop at the first screening limit above the budget",
+    "per_budget_tail": 0.05,
+    "joint_tail": "0.05/21",
+    "block_days": [
+      1,
+      3,
+      5
+    ],
+    "block_percentile": 0.95,
+    "block_replicates": 1000,
+    "block_seed": 42,
+    "ceiling_rule": "a budget point is admitted under a ceiling when its joint limit and its one-, three- and five-day block percentiles all lie within the ceiling; the admitted point with the most selection delay minutes is used"
+  },
+  "monitoring": {
+    "check_days": [
+      8,
+      15,
+      22,
+      29
+    ],
+    "check_tail": "0.05/4",
+    "checked_alerts": "alerts of the current month issued by the current policy whose onward flights departed before the check",
+    "pause_rule": "model alerts pause when the corrected upper limit exceeds the ceiling; the timing rule keeps running",
+    "replacement": "select on days 30 to 16 before the check and screen on days 15 to 1 before the check with the ceiling rule",
+    "approval": "model alerts resume after the carrier operations lead approves the screened replacement"
+  },
+  "review_window": {
+    "groups": [
+      "all",
+      "at_least_15_minutes",
+      "at_least_25_minutes"
+    ],
+    "selection_tail": "0.05/63",
+    "weekly_tail": "0.05/12",
+    "window_minutes": 25
+  },
+  "resampling": {
+    "replicates": 1000,
+    "seed_days_blocks_aircraft": 42,
+    "seed_airports_pairs": 314159,
+    "units": [
+      "operating day",
+      "circular three-day block",
+      "aircraft registration",
+      "airport pair",
+      "departure airport",
+      "arrival airport"
+    ],
+    "statistic": "sum minutes within each replicate before forming shares"
+  },
+  "period_format": "month-day within one operating year; intervals include the first day and exclude the last day, and the closed-loop replay includes 31 December"
+}

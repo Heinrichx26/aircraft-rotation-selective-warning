@@ -1,0 +1,19 @@
+Check,15% budget,18% budget
+"June, filed-plan replay",,
+First-alert services,"42,647","47,634"
+June departures among these services,"42,566","47,516"
+Unique turnaround-register match,"40,341/42,566 (94.77%)","43,012/47,516 (90.52%)"
+Take-off time agrees with the service record,"40,341/40,341","43,012/43,012"
+Filed aircraft flew the onward flight,"40,339/40,341 (99.995%)","43,010/43,012 (99.995%)"
+Landing and take-off times both verified,"40,274/42,566 (94.62%)","42,904/47,516 (90.29%)"
+Same aircraft at both verified events,"40,274/40,274","42,904/42,904"
+"Filed, next-day and turnaround aircraft agree","27,759/42,566 (65.21%)","29,519/47,516 (62.12%)"
+Delay labels differing between reconstructions,0,0
+"July–December, primary replay",,
+First-alert services departing in the month,"249,887","277,457"
+Unique turnaround-register match,"239,792/249,887 (95.96%)","254,911/277,457 (91.87%)"
+Take-off time agrees with the service record,"239,792/239,792","254,911/254,911"
+Filed aircraft flew the onward flight,"239,665/239,792 (99.947%)","254,780/254,911 (99.949%)"
+Lowest monthly share flown by the filed aircraft,99.928% (October),99.931% (September)
+Landing and take-off times both verified,"239,294/249,887 (95.76%)","254,129/277,457 (91.59%)"
+Same aircraft at both verified events,"239,294/239,294","254,129/254,129"

@@ -1,0 +1,9 @@
+Measure,15% budget,18% budget
+Candidates passing the screen,238/294,309/342
+May selection false/alerts,"1,795/14,645","2,767/17,737"
+May screen false/alerts,"2,321/16,018","3,354/19,185"
+May screen upper (%),14.96,17.94
+June model alerts,"32,127","38,474"
+June false alerts,"3,725","5,667"
+June model error (%) [95% interval],"11.59 [10.71, 12.59]","14.73 [13.78, 15.80]"
+June CDS (%),34.84,38.80

@@ -4,10 +4,13 @@ Public reproducibility materials for the manuscript “Selective warning of down
 
 ## Contents
 
-- `src/` contains connection reconstruction, warning-policy functions, assignment-history, matched-policy and daily-workload examples, and model training on the open archive and constructed connections.
-- `data/` contains fictional event, policy-pair and daily-ranking examples and the model configurations. The open archive remains at Harvard Dataverse.
-- `results/` contains aggregate reference counts from the public archive and expected outputs from constructed examples.
+- `src/` contains connection reconstruction, warning-policy functions, assignment-history, matched-policy and daily-workload examples, model training on the open archive and constructed connections, and the article pipeline modules.
+- `config/` contains the article calendar partition, selection, screening and monitoring rules, the model settings and the field schema.
+- `data/` contains fictional event, policy-pair and daily-ranking examples and the model configurations of the open-archive replay. The open archive remains at Harvard Dataverse.
+- `results/` contains aggregate reference counts from the public archive, expected outputs from constructed examples, the model card and selection grid of the article, and the article tables.
 - `article/data_availability.md` gives the availability statement used in the manuscript.
+
+Release reproducibility-v1.3 adds the article pipeline to release reproducibility-v1.2. Files carried over from reproducibility-v1.2 are unchanged apart from the README files and the availability statement.
 
 ## Public flight archive
 
@@ -36,7 +39,7 @@ python src/public_model_replay.py data/2008.csv.bz2 --smoke --output results/mod
 python src/public_model_replay.py data/2008.csv.bz2 --output results/model_replay.json
 ```
 
-`results/expected_model_replay.json` gives the screening and alert counts for the two experts and the routed model across all 21 budgets. It reports realised false alerts, observed minutes selected by each channel, and paired daily rankings at identical alert counts for eligible screened points. The trace covers 120,058 test connections. The routed candidates at 15% and 18% failed their screening limits, so the timing rule supplied the test alerts at those budgets; the independently screened tree supplies their scored model comparison.
+`results/expected_model_replay.json` gives the screening and alert counts for the two experts and the routed model across all 21 budgets. It reports realised false alerts, observed minutes selected by each channel, and paired daily rankings at identical alert counts for eligible screened points. The trace covers 120,058 test connections.
 
 Calculate pointwise and Bonferroni-adjusted one-sided limits for the 21 screened budget policies within each method and across all reported methods:
 
@@ -45,6 +48,33 @@ python src/gridwise_bounds.py results/model_replay.json --output results/gridwis
 ```
 
 The calculation uses the false-alert counts on the independent screening partition. Its Bernoulli reference limits and the separate block-resampling results describe different sampling assumptions.
+
+## Article pipeline
+
+The article pipeline follows the calendar in `config/article_protocol.json`: January outcomes form the historical memory, a fixed sample of 131,072 February–March connections fits the experts, 8,192 April connections fit the probability calibration and the routing gate, 1–15 May selects policies, 16–31 May screens them, June is the main comparison and June–December is the closed-loop replay. Periods are given as month-day ranges; each range includes its first day and excludes its last day.
+
+- `src/article_features.py` adds the decision-time features: ten operating-state measures observed in the 60 minutes before landing (180 minutes for the route) and the 28-day flight-number memory.
+- `src/article_experts.py` fits the retrieval expert with seven historical families, the tree expert (XGBoost, LightGBM and CatBoost probabilities with a logistic calibration and two quantile severity models) and the routing gate.
+- `src/policy_screen.py` evaluates the candidate grids of the routed hybrid, the seven comparison methods and the tree expert without routing, screens the frontier with the fixed-sequence test at tail probability 0.05 per budget or 0.05/21 jointly, admits operating-ceiling points with one-, three- and five-day block percentiles, replays weekly checks with 30-day replacement, and screens the review-window policies with tail probability 0.05/63.
+- `config/article_models.json` lists every model setting, and `config/scored_record_schema.json` defines the archive fields, the connection fields, the decision-time features, the scored-record fields and the policy fields.
+- `results/article_model_card.json` gives the fitting periods, sample sizes, selected epoch, calibration and gate coefficients, gate standardisation and fitting times of the article model.
+- `results/article_selection_grid.csv.gz` lists all 298,222 candidate policies of the routed hybrid, the seven comparison methods and the tree expert without routing with their alerts, false alerts, delay minutes and one-sided upper limits on 1–15 May; 295,902 rows belong to the routed hybrid.
+- `results/article_tables/` contains every table of the article and the Supplementary Material as a comma-separated value file; `index.csv` maps each file to its table number and caption.
+
+Install the article dependencies and run the reduced check, which stops after screening:
+
+```bash
+python -m pip install -r article_requirements.txt
+python src/article_example.py --smoke --output results/article_example_smoke.json
+```
+
+Then run the complete constructed example and compare the output with `results/expected_article_example.json`:
+
+```bash
+python src/article_example.py --output results/article_example.json
+```
+
+The constructed calendar has 500 fictional aircraft flying five legs a day between ten fictional airports from 1 January to 31 May, with network seed 7. Each period of the article calendar has a constructed counterpart, and April and May serve as the replay months. The example uses three training epochs and 60 trees per tree model so that it finishes in a few minutes on a desktop computer. Its output records the fitted model card, a label-flip check of the scoring functions, the selection and screening of all 21 budgets, April outcomes at the 15% and 18% budgets, the closed-loop replay with weekly checks and 30-day replacement under both operating ceilings, and the review-window policies with their weekly checks in April.
 
 ## Constructed examples
 

@@ -1,0 +1,5 @@
+Ceiling,Lead limit,Checks,Daily median (max),Delay ≥15 min,Delay ≥30 min,Hourly queue 95th (max)
+15%,35 min,255,8 (15),181,45,109 (153)
+15%,45 min,757,24 (39),494,120,111 (154)
+18%,35 min,134,4 (10),79,16,128 (178)
+18%,45 min,429,13.5 (23),225,48,129 (179)

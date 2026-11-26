@@ -1,0 +1,13 @@
+Ranking,False alerts,Minutes per false alert,Gain (min),Difference (pp) [three-day],Airport pair
+"15% ceiling, all connections (337,660)",,,,,
+XGBoost probability,"2,306/2,119",559/502,"+225,814","+4.83 [2.16, 7.10]","[3.49, 6.22]"
+Empirical severity score,"2,306/3,706",559/368,"-73,017","-1.56 [-3.12, 0.10]","[-2.35, -0.75]"
+"15% ceiling, matching registration snapshots (249,007)",,,,,
+XGBoost probability,"1,529/1,424",559/495,"+150,216","+4.56 [2.16, 6.66]","[3.34, 5.84]"
+Empirical severity score,"1,529/2,482",559/361,"-40,178","-1.22 [-2.49, 0.18]","[-1.96, -0.48]"
+"18% ceiling, all connections (337,660)",,,,,
+XGBoost probability,"3,741/3,718",399/340,"+225,169","+4.82 [2.07, 7.22]","[3.54, 6.06]"
+Empirical severity score,"3,741/5,121",399/304,"-66,132","-1.42 [-2.55, -0.10]","[-2.07, -0.74]"
+"18% ceiling, matching registration snapshots (249,007)",,,,,
+XGBoost probability,"2,530/2,508",391/337,"+143,795","+4.36 [1.96, 6.59]","[3.23, 5.56]"
+Empirical severity score,"2,530/3,468",391/297,"-39,328","-1.19 [-2.19, -0.15]","[-1.82, -0.52]"

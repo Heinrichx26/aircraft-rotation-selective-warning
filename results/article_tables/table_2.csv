@@ -1,0 +1,12 @@
+Method,Model alerts,False alerts,Model error (%) [95% interval],CDS (%),Routed minus method (pp) [95% interval]
+Routed hybrid,"42,593","5,107","11.99 [11.07, 13.05]",54.15,–
+Gradient-boosted tabular learners,,,,,
+XGBoost probability,"42,589","5,190","12.19 [11.53, 13.17]",50.79,"+3.37 [1.44, 4.94]"
+LightGBM probability,"42,514","5,002","11.77 [11.08, 12.80]",51.15,"+3.01 [1.33, 4.33]"
+CatBoost probability,"42,774","5,004","11.70 [10.90, 12.81]",51.43,"+2.72 [1.01, 4.14]"
+Selective prediction and risk scoring,,,,,
+Empirical severity score,"31,144","3,521","11.31 [9.77, 12.85]",49.81,"+4.35 [2.99, 5.92]"
+Confidence rejection,"33,352","2,270","6.81 [6.36, 7.46]",46.64,"+7.52 [5.43, 9.22]"
+Schedule slack,"20,683","1,997","9.66 [8.31, 11.76]",36.19,"+17.97 [14.44, 20.48]"
+Retrieval from historical records,,,,,
+Neural retrieval,"28,976","3,714","12.82 [11.78, 14.01]",45.65,"+8.51 [7.45, 9.42]"

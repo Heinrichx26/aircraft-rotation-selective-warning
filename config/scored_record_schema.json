@@ -1,0 +1,346 @@
+{
+  "description": "Fields read from the flight archives and fields of the scored connection records used by the article pipeline. Times are local civil timestamps; durations are whole minutes.",
+  "operational_archive_fields": [
+    {
+      "field": "id",
+      "type": "string",
+      "description": "flight record identifier"
+    },
+    {
+      "field": "reg",
+      "type": "string",
+      "description": "aircraft registration recorded for the flight"
+    },
+    {
+      "field": "airline",
+      "type": "string",
+      "description": "operating carrier"
+    },
+    {
+      "field": "flight",
+      "type": "string",
+      "description": "flight number"
+    },
+    {
+      "field": "dep",
+      "type": "string",
+      "description": "departure airport"
+    },
+    {
+      "field": "arr",
+      "type": "string",
+      "description": "arrival airport"
+    },
+    {
+      "field": "planned",
+      "type": "timestamp",
+      "description": "scheduled departure"
+    },
+    {
+      "field": "planned_arr",
+      "type": "timestamp",
+      "description": "scheduled arrival"
+    },
+    {
+      "field": "departed",
+      "type": "timestamp",
+      "description": "recorded take-off"
+    },
+    {
+      "field": "landed",
+      "type": "timestamp",
+      "description": "recorded landing"
+    },
+    {
+      "field": "status",
+      "type": "string",
+      "description": "service status: completed, cancelled, diverted or other recorded states"
+    }
+  ],
+  "public_archive_fields": {
+    "source": "Data Expo 2009 Airline On-Time Data, Harvard Dataverse, https://doi.org/10.7910/DVN/HG7NV7, file 2008.csv.bz2",
+    "fields": [
+      "Month",
+      "DayofMonth",
+      "CRSDepTime",
+      "CRSArrTime",
+      "DepTime",
+      "ArrTime",
+      "DepDelay",
+      "ArrDelay",
+      "ActualElapsedTime",
+      "CRSElapsedTime",
+      "TailNum",
+      "Origin",
+      "Dest",
+      "Cancelled",
+      "Diverted",
+      "UniqueCarrier"
+    ]
+  },
+  "connection_fields": [
+    {
+      "field": "link_key",
+      "type": "string",
+      "description": "identifier of the inbound flight that starts the connection"
+    },
+    {
+      "field": "reg",
+      "type": "string",
+      "description": "aircraft registration"
+    },
+    {
+      "field": "landed",
+      "type": "timestamp",
+      "description": "inbound landing; the decision time"
+    },
+    {
+      "field": "next_id",
+      "type": "string",
+      "description": "identifier of the onward flight"
+    },
+    {
+      "field": "next_flight",
+      "type": "string",
+      "description": "onward flight number"
+    },
+    {
+      "field": "next_airline",
+      "type": "string",
+      "description": "onward carrier"
+    },
+    {
+      "field": "next_dep_airport",
+      "type": "string",
+      "description": "onward departure airport"
+    },
+    {
+      "field": "next_arr_airport",
+      "type": "string",
+      "description": "onward arrival airport"
+    },
+    {
+      "field": "next_departed",
+      "type": "timestamp",
+      "description": "onward take-off; used only for labels and period membership"
+    },
+    {
+      "field": "prev_dep_delay_min",
+      "type": "integer",
+      "description": "inbound departure delay"
+    },
+    {
+      "field": "prev_arr_delay_min",
+      "type": "integer",
+      "description": "inbound arrival delay"
+    },
+    {
+      "field": "scheduled_gap_min",
+      "type": "integer",
+      "description": "scheduled onward departure minus scheduled inbound arrival"
+    },
+    {
+      "field": "available_slack_min",
+      "type": "integer",
+      "description": "scheduled onward departure minus inbound landing"
+    },
+    {
+      "field": "inherited_lb_min",
+      "type": "integer",
+      "description": "inherited lower bound on onward departure delay, max(0, -available_slack_min)"
+    },
+    {
+      "field": "decision_hour",
+      "type": "integer",
+      "description": "hour of the landing"
+    },
+    {
+      "field": "decision_dow",
+      "type": "integer",
+      "description": "day of week of the landing, Monday = 0"
+    },
+    {
+      "field": "next_dep_delay_min",
+      "type": "integer",
+      "description": "onward take-off minus scheduled onward departure; outcome only"
+    },
+    {
+      "field": "warning_target",
+      "type": "0/1",
+      "description": "onward departure delay of at least 15 minutes; outcome only"
+    },
+    {
+      "field": "evidence_warning",
+      "type": "0/1",
+      "description": "timing alert: inherited lower bound of at least 15 minutes"
+    }
+  ],
+  "decision_time_features": {
+    "operating_state": {
+      "window_minutes": 60,
+      "route_window_minutes": 180,
+      "fields": [
+        "live_dep_count",
+        "live_dep_late_share",
+        "live_dep_mean_delay",
+        "live_backlog",
+        "live_backlog_share",
+        "live_arr_late_share",
+        "live_dest_dep_late_share",
+        "live_dest_arr_late_share",
+        "live_airline_late_share",
+        "live_route_late_share"
+      ],
+      "rule": "events time-stamped before the landing at the onward origin, onward destination, onward carrier and route"
+    },
+    "flight_number_memory": {
+      "window_days": 28,
+      "fields": [
+        "flight_rate",
+        "flight_q50",
+        "flight_q70",
+        "flight_q85",
+        "flight_q90",
+        "flight_q95",
+        "flight_log_support",
+        "flight_volatility",
+        "flight_exact",
+        "hist_flight_count",
+        "hist_flight_warning_rate",
+        "hist_flight_avg_delay_min"
+      ],
+      "rule": "take-offs of the same onward flight number on the 28 days before the decision day"
+    },
+    "historical_families": [
+      "carrier",
+      "departure airport",
+      "arrival airport",
+      "airport pair",
+      "landing hour",
+      "carrier at the departure airport",
+      "flight number"
+    ]
+  },
+  "scored_record_fields": [
+    {
+      "field": "gate_retrieval_bonus",
+      "article_term": "routing gate output",
+      "description": "routes the connection to the retrieval expert when at or above the gate cut"
+    },
+    {
+      "field": "aggregated_utility",
+      "article_term": "retrieval utility",
+      "description": "gate-weighted family utility of the retrieval expert"
+    },
+    {
+      "field": "disagreement",
+      "article_term": "family disagreement",
+      "description": "gate-weighted variance of family utilities"
+    },
+    {
+      "field": "retrieval_probability",
+      "article_term": "retrieval probability",
+      "description": "gate-weighted family probability"
+    },
+    {
+      "field": "tree_probability_raw",
+      "article_term": "XGBoost probability before calibration",
+      "description": "XGBoost classifier output"
+    },
+    {
+      "field": "tree_probability_calibrated",
+      "article_term": "calibrated XGBoost probability",
+      "description": "comparison method of the gradient-boosted family"
+    },
+    {
+      "field": "light",
+      "article_term": "LightGBM probability",
+      "description": "comparison method of the gradient-boosted family"
+    },
+    {
+      "field": "warning_probability",
+      "article_term": "CatBoost probability",
+      "description": "comparison method; also used by confidence rejection"
+    },
+    {
+      "field": "tail_severity_pred",
+      "article_term": "CatBoost 0.8-quantile delay",
+      "description": "severity input of the empirical severity score and the tree expert"
+    },
+    {
+      "field": "tree_excess",
+      "article_term": "XGBoost quantile excess",
+      "description": "mean of the five predicted quantiles of delay above 15 minutes"
+    },
+    {
+      "field": "tree_expert_probability",
+      "article_term": "tree expert probability",
+      "description": "calibrated mean of the XGBoost, LightGBM and CatBoost probabilities"
+    },
+    {
+      "field": "tree_expert_severity",
+      "article_term": "tree expert severity",
+      "description": "mean of the quantile excess and the CatBoost excess over 15 minutes"
+    },
+    {
+      "field": "risk_aware_utility_score",
+      "article_term": "empirical severity score",
+      "description": "comparison method of the selective prediction and risk-scoring family"
+    },
+    {
+      "field": "uncertainty_probability_entropy",
+      "article_term": "prediction entropy",
+      "description": "binary entropy of the CatBoost probability used by confidence rejection"
+    }
+  ],
+  "policy_fields": [
+    {
+      "field": "method",
+      "description": "tree, light, probability, empirical, slack, confidence, retrieval, expert or hybrid"
+    },
+    {
+      "field": "gate",
+      "description": "routing cut on gate_retrieval_bonus"
+    },
+    {
+      "field": "weight",
+      "description": "disagreement weight of the retrieval ranking"
+    },
+    {
+      "field": "offset",
+      "description": "minutes added to the tree expert severity before ranking; inf ranks by probability"
+    },
+    {
+      "field": "threshold",
+      "description": "alert threshold of the single-score methods and of the tree branch outside the routed group"
+    },
+    {
+      "field": "inner_threshold",
+      "description": "tree corroboration threshold inside the routed group"
+    },
+    {
+      "field": "retrieval_threshold",
+      "description": "retrieval threshold inside the routed group"
+    },
+    {
+      "field": "entropy",
+      "description": "entropy cutoff of confidence rejection"
+    },
+    {
+      "field": "alerts",
+      "description": "model alerts in the selection period"
+    },
+    {
+      "field": "false_alerts",
+      "description": "model alerts whose onward departure was delayed by less than 15 minutes"
+    },
+    {
+      "field": "delay_minutes",
+      "description": "onward delay minutes of alerted connections delayed by at least 15 minutes"
+    },
+    {
+      "field": "selection_upper_limit",
+      "description": "one-sided Clopper-Pearson upper limit of the selection error fraction, tail probability 0.05"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "description": "Fitted-model metadata of the article pipeline. Periods are month-day ranges within the operating year; each range includes its first day and excludes its last day.",
+  "periods": {
+    "historical_memory": [
+      "01-01",
+      "02-01"
+    ],
+    "expert_fitting": [
+      "02-01",
+      "04-01"
+    ],
+    "gate_and_calibration": [
+      "04-01",
+      "05-01"
+    ],
+    "selection": [
+      "05-01",
+      "05-16"
+    ],
+    "screening": [
+      "05-16",
+      "06-01"
+    ],
+    "test": [
+      "06-01",
+      "07-01"
+    ],
+    "closed_loop_replay": [
+      "06-01",
+      "12-31"
+    ]
+  },
+  "sample_sizes": {
+    "historical_memory_connections": 383328,
+    "expert_training_connections": 131072,
+    "gate_training_connections": 8192,
+    "sample_seed": 42
+  },
+  "retrieval_expert": {
+    "historical_families": 7,
+    "maximum_entries_per_connection": 49,
+    "embedding_dimension": 16,
+    "hidden_width": 64,
+    "maximum_epochs": 8,
+    "batch_size": 256,
+    "selected_epoch": 8,
+    "epoch_criterion_by_epoch": [
+      0.4554,
+      0.46315,
+      0.4663,
+      0.46806,
+      0.46936,
+      0.44877,
+      0.47355,
+      0.48326
+    ]
+  },
+  "tree_expert": {
+    "probability_models": [
+      "XGBoost",
+      "LightGBM",
+      "CatBoost"
+    ],
+    "tree_features": 33,
+    "catboost_features": 47,
+    "severity_models": [
+      "XGBoost quantile regression at 0.50, 0.70, 0.85, 0.90 and 0.95",
+      "CatBoost 0.8-quantile regression"
+    ]
+  },
+  "calibration": {
+    "xgboost_log_odds": {
+      "log_scale": -0.163203445972036,
+      "bias": 0.08842427179353816
+    },
+    "three_model_mean_log_odds_for_routing": {
+      "log_scale": -0.05096738766701596,
+      "bias": 0.1557467896335781
+    },
+    "tree_expert_probability": {
+      "coefficient": 0.9518629037522591,
+      "intercept": 0.16043303520469326
+    }
+  },
+  "gate": {
+    "parameters": [
+      -0.19790382600529224,
+      0.02679497668968026,
+      0.028862795394377992,
+      -0.1887182585408556,
+      0.2475164782758003,
+      -0.29247145642353434,
+      0.9181183405800627,
+      -0.21922062687351002,
+      -1.4418230662468907,
+      -1.7660599877642065,
+      -1.3417265674119532,
+      -1.9101663441262178
+    ],
+    "dense_support_cutoff": 2.4010555744171143,
+    "standardization": {
+      "support_log": {
+        "mean": 2.3929648399353027,
+        "std": 0.030447453260421753
+      },
+      "weighted_fallback": {
+        "mean": 4.804154741577804e-06,
+        "std": 9.460106230108067e-05
+      },
+      "disagreement_raw": {
+        "mean": 0.28115054965019226,
+        "std": 0.6338640451431274
+      },
+      "tree_logit_calibrated": {
+        "mean": -0.9369693685213151,
+        "std": 1.7962764934340092
+      },
+      "tree_uncertainty_raw": {
+        "mean": 0.1348724625425588,
+        "std": 0.07729335144255411
+      },
+      "retrieval_utility_raw": {
+        "mean": 7.01253080368042,
+        "std": 2.808178663253784
+      }
+    },
+    "tree_reference": {
+      "probability_at_least": 0.85,
+      "connections": 559,
+      "of_connections": 8192,
+      "below_threshold_connections": 17,
+      "of_below_threshold": 5636
+    }
+  },
+  "fitting_seconds": {
+    "memory_construction": 23.0,
+    "neural_expert": 222.6,
+    "tree_models": 43.8,
+    "gate_and_probability_calibration": 2.5,
+    "complete_refit": 291.9
+  }
+}

@@ -1,0 +1,49 @@
+table,caption,file
+Table 1,Computational profile.,table_1.csv
+Table 2,June comparison at the 15% false-alert budget.,table_2.csv
+Table 3,June comparison at the 18% false-alert budget.,table_3.csv
+Table 4,Contribution of each component in June.,table_4.csv
+Table 5,June review load of the routed method.,table_5.csv
+Table 6,June outcomes of policies matched on May false-alert counts.,table_6.csv
+Table 7,"Closed-loop replay of the routed hybrid under the 15% operating ceiling, June–December.",table_7.csv
+Table 8,"Closed-loop replay of the routed hybrid under the 18% operating ceiling, June–December.",table_8.csv
+Table S.1,"Hybrid policy selection and temporal screen, part A.",supplementary_table_S1.csv
+Table S.2,"Hybrid policy selection and temporal screen, part B.",supplementary_table_S2.csv
+Table S.3,"Selected hybrid thresholds and routing settings, part A.",supplementary_table_S3.csv
+Table S.4,"Selected hybrid thresholds and routing settings, part B.",supplementary_table_S4.csv
+Table S.5,"June outcomes across the hybrid budget frontier, part A.",supplementary_table_S5.csv
+Table S.6,"June outcomes across the hybrid budget frontier, part B.",supplementary_table_S6.csv
+Table S.7,Joint screening of the 21 hybrid budgets with δ=0.05/21.,supplementary_table_S7.csv
+Table S.8,Policies selected for the 15% and 18% operating ceilings.,supplementary_table_S8.csv
+Table S.9,Weekly checks that paused model alerts and the replacement policies.,supplementary_table_S9.csv
+Table S.10,"Monthly source coverage, connection counts and linkage checks.",supplementary_table_S10.csv
+Table S.11,Monthly calibration and ranking of the tree expert on connections without a timing alert.,supplementary_table_S11.csv
+Table S.12,Assignment fields in the June alert records.,supplementary_table_S12.csv
+Table S.13,Turnaround checks for first-alert services shared by both replays.,supplementary_table_S13.csv
+Table S.14,"Routed minus tree expert without routing, by January history.",supplementary_table_S14.csv
+Table S.15,"Routed minus XGBoost probability at equal June alert counts, by January history.",supplementary_table_S15.csv
+Table S.16,"Delay gained by routing over the tree expert without routing, by month and pooled.",supplementary_table_S16.csv
+Table S.17,June airport pairs without earlier eligible connections.,supplementary_table_S17.csv
+Table S.18,June outcomes of the routed method and its component variants.,supplementary_table_S18.csv
+Table S.19,June comparison with a 10-minute delay endpoint.,supplementary_table_S19.csv
+Table S.20,June comparison with a 30-minute delay endpoint.,supplementary_table_S20.csv
+Table S.21,May selection and screening of the matched comparison policies.,supplementary_table_S21.csv
+Table S.22,Matched XGBoost comparison within connection subsets.,supplementary_table_S22.csv
+Table S.23,Policies selected for connections with at least 15 scheduled minutes.,supplementary_table_S23.csv
+Table S.24,Time available after landing for June model alerts.,supplementary_table_S24.csv
+Table S.25,Same-flight alerts in the primary and filed-plan June replays.,supplementary_table_S25.csv
+Table S.26,Routed minus matched XGBoost after reconstruction from filed flight plans.,supplementary_table_S26.csv
+Table S.27,Aircraft identity at recorded flight events for first-alert services.,supplementary_table_S27.csv
+Table S.28,May screening of the selected filed-plan policies.,supplementary_table_S28.csv
+Table S.29,Filed-plan policies at the 21 budget points.,supplementary_table_S29.csv
+Table S.30,June outcomes of the filed-plan policies in the 25-minute window.,supplementary_table_S30.csv
+Table S.31,Weekly checks of the filed-plan policies in June.,supplementary_table_S31.csv
+Table S.32,Monthly outcomes of the routed hybrid under the May-selected filed-plan policies.,supplementary_table_S32.csv
+Table S.33,Filed-plan alerts by registration-snapshot agreement.,supplementary_table_S33.csv
+Table S.34,Rankings at the routed policy's daily alert counts in the 25-minute window.,supplementary_table_S34.csv
+Table S.35,"Rankings at the routed policy's daily alert counts, June–December.",supplementary_table_S35.csv
+Table S.36,June review load by scheduled lead time.,supplementary_table_S36.csv
+Table S.37,June connections without an alert and their later delay.,supplementary_table_S37.csv
+Table S.38,Manual priority checks among unalerted June connections.,supplementary_table_S38.csv
+Table S.39,Priority checks and an equal number of shortest-lead connections.,supplementary_table_S39.csv
+Table S.40,Pushback at least 25 minutes after landing.,supplementary_table_S40.csv

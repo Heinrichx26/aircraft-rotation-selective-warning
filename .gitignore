@@ -12,3 +12,8 @@ results/policy_example.json
 results/assignment_example.json
 results/gate_example.json
 results/expert_example.json
+results/article_example.json
+results/article_example_smoke.json
+results/daily_workload_smoke.json
+results/model_smoke.json
+results/public_gridwise_check.json

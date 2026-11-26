@@ -5,3 +5,5 @@
 `expected_gridwise_bounds.json` contains pointwise, method-specific 21-policy and combined-family limits calculated from the public model replay's screening counts.
 
 `expected_model_replay.json` gives the complete held-out open-archive evaluation, including the screened operating points and daily workload-matched comparisons. `expected_daily_workload.json` gives the paired intervals for the fictional six-day ranking example.
+
+`expected_article_example.json` is the reference output of the constructed article example. `article_model_card.json`, `article_selection_grid.csv.gz` and the files in `article_tables/` hold the model metadata, the complete candidate grid with its selection-period counts and the tables of the article and the Supplementary Material.

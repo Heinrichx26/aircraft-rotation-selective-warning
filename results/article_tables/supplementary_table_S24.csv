@@ -1,0 +1,10 @@
+Measure,15% budget,18% budget
+Model alerts,"42,593","47,659"
+"Scheduled lead, median (interquartile range), min",45 (27–67),49 (30–80)
+Lead below 15 min,"5,828","5,828"
+Lead of zero or less,"2,432","2,432"
+Lead below 30 min,"11,847","11,856"
+Alerts with a valid pushback time,"41,497","46,477"
+"Landing to pushback, median (interquartile range), min",68 (55–100),71 (56–117)
+Landing to pushback above 15 min,"41,486","46,465"
+"Landing to take-off, median (interquartile range), min",82 (67–117),86 (68–133)

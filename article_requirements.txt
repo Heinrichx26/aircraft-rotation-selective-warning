@@ -1,0 +1,3 @@
+-r expert_requirements.txt
+lightgbm==4.6.0
+catboost==1.2.10

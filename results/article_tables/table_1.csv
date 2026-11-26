@@ -1,0 +1,11 @@
+Item,Value
+Historical families,7
+Maximum entries retrieved per unresolved connection,49
+Embedding dimension d,16
+Hidden width,64
+Maximum training epochs,8
+Batch size,256
+Expert-training connections,"131,072"
+Gate-training connections,"8,192"
+Operating-state window before landing,60 min
+Flight-number memory window,28 days

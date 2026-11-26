@@ -1,0 +1,8 @@
+Variant,15% budget CDS (%),15% budget Routed minus variant (pp) [95% interval],18% budget CDS (%),18% budget Routed minus variant (pp) [95% interval]
+Routed hybrid,54.15,–,57.17,–
+Probability ranking in the tree expert,52.59,"+1.56 [0.76, 2.24]",54.87,"+2.30 [1.20, 3.19]"
+Thresholds selected separately for each expert,50.38,"+3.77 [2.25, 5.05]",50.38,"+6.78 [4.51, 8.66]"
+Retrieval branch without tree corroboration,52.94,"+1.21 [0.49, 2.03]",56.68,"+0.49 [0.36, 0.59]"
+Random routing,53.60,"+0.56 [0.34, 0.81]",56.85,"+0.31 [-0.28, 0.83]"
+Tree expert without routing,53.80,"+0.35 [0.14, 0.59]",56.89,"+0.28 [0.17, 0.39]"
+Retrieval expert without routing,45.65,"+8.51 [7.45, 9.42]",49.23,"+7.93 [6.88, 8.94]"
